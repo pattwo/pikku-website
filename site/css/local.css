@@ -1,0 +1,27 @@
+body {background: url('../images/bg.png');}
+h1 {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 49px;
+    line-height: 44px;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+h2 {
+    font-family: 'Petemoss', cursive;
+    font-size: 44px;
+    line-height: 46px;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+    font-weight: bold;
+}
+h3 {
+    font-family: 'Petemoss', cursive;
+    font-size: 36px;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+    font-weight: normal;
+}
+p {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+    font-weight: normal;
+}
