@@ -2,9 +2,144 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Pikku Joulu 2024</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/w3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Petemoss&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/ico" href="images/favicon.ico">
+
+    <style>
+        body {background: url('images/bg.png');}
+        h1 {
+            font-family: Verdana, Arial, Helvetica, sans-serif;
+            font-size: 49px;
+            line-height: 44px;
+            text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        h2 {
+            font-family: 'Petemoss', cursive;
+            font-size: 44px;
+            line-height: 46px;
+            text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+            font-weight: bold;
+        }
+        h3 {
+            font-family: 'Petemoss', cursive;
+            font-size: 36px;
+            text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+            font-weight: normal;
+        }
+        p {
+            font-family: Verdana, Arial, Helvetica, sans-serif;
+            text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+            font-weight: normal;
+        }
+    </style>
 </head>
 <body>
+<div class="w3-content w3-text-white">
+    <div class="w3-center">
+        <img src="images/hero.png" alt="Pikku Joulu" class="w3-image">
+    </div>
 
+    <div class="w3-container w3-center w3-bottombar w3-border-green">
+        <h1>Pikku Joulu</h1>
+        <h2>Saturday, December 21, 2024</h2>
+        <h3>Sandra and Patrick's House</h3>
+        <h4>Cocktails 4 p.m. - Dinner 5 p.m.</h4>
+    </div>
+
+    <div class="w3-container">
+        <h2>Cocktails</h2>
+        <p>It's after 5p.m. somewhere, right? &#128521; Well, then it's time
+            for refreshment!</p>
+        <p>Most varieties of beverages will be available. If you wish, you may
+            bring your favourite.</p>
+    </div>
+
+    <div class="w3-container">
+        <h2>Santa Visit and Games for the Kids</h2>
+        <p>There is going to be a visit from Santa again this year. Still trying
+            to work out details. It's uncertain whether we'll have an in-person
+            or virtual (video call) visit like we have the last couple of years.</p>
+        <p>In any event, games for kids will be happening. Participation is
+            encouraged but certainly not mandatory. They can just run around and be
+            kids if they so choose. &#128540;</p>
+    </div>
+
+    <div class="w3-container">
+        <h2>Potluck Dinner</h2>
+        <p>Sandra tells me that the potluck this year is going to an appetizer
+            and finger foods only format.</p>
+        <p>The list of who is bringing what is at the bottom of this page. Scroll
+            all the way down to find the form to add your name to the list.</p>
+    </div>
+
+    <div class="w3-container w3-bottombar w3-border-green">
+        <h2>Dirty Santa Gift Exchange</h2>
+        <p>Get Ready for the Great Gift Heist!</p>
+        <p>That's right, folks! We're talking about the annual Dirty Santa
+            extravaganza. It's a Yuletide caper where you'll steal, scheme, and
+            swindle your way to the best gift under the tree.</p>
+        <p>So gather 'round the fireplace, grab a mug of eggnog, and prepare
+            for a night of festive thievery. Remember, the spoils go to the boldest,
+            the brightest, and the most brazen gift-nabbing scoundrel.</p>
+        <p>You've been warned.</p>
+        <p>Each "adult" wishing to participate brings a wrapped
+            gift with an approximate value of $25</p>
+    </div>
+
+    <div class="w3-container w3-bottombar w3-border-green">
+        <h2>Who's Bringing What?</h2>
+        <div class="w3-row">
+            <div class="w3-col m8 w3-section">
+                <div class="w3-card">
+                    <table class="w3-table w3-bordered">
+                        <thead>
+                        <tr>
+                            <th>Name(s)</th><th>Dish(es)</th>
+                        </tr>
+                        </thead>
+                        <tr><td><p>Sandra and Patrick</p></td><td><p>Seven Layer Dip</p></td></tr>
+                        <tr><td><p>Scott</p></td><td><p>Wants To Make Something</p></td></tr>
+                        <tr><td><p>Sandra</p></td><td><p>Dessert</p></td></tr>
+                        <tr><td><p>Pirjo</p></td><td><p>TBA</p></td></tr>
+                        <tr><td><p>Anne and Ryan</p></td><td><p>Fruit tray</p></td></tr>
+                        <tr><td><p>Kristy, Rob and Abby</p></td><td><p>Mini Pizza Bites and Spicy Christmas Coffee</p></td></tr>
+                        <tr><td><p>Bry, Mandy, Everly, and Reid</p></td><td><p>Antipasto skewers </p></td></tr>
+                    </table>
+                </div>
+                <!--
+                    {{ range . }}
+                    <tr><td><p>{{.Name}}</p></td><td><p>{{.Dish}}</p></td></tr>
+                    {{end}}
+                -->
+            </div>
+            <div class="w3-col w3-padding m4">
+                <h3>Count Me In!</h3>
+                <p>Add your name to the Potluck Dinner list by filling out the form below.
+                    Contact Sandra for the access code if she hasn't sent it to you already.</p>
+                <form action="/" method="post">
+                    <p><input class="w3-input w3-border-green w3-light-grey w3-round" type="text" name="name" id="name" required>
+                        <label for="name"><b>Your Name</b></label></p>
+                    <p><input class="w3-input w3-border-green w3-light-grey w3-round" type="text" name="dish" id="dish">
+                        <label for="dish"><b>Name of Dish</b></label></p>
+                    <p><input class="w3-input w3-border-green w3-light-grey w3-round" type="text" name="code" id="code">
+                        <label for="code"><b>Access Code</b></label></p>
+                    <button class="w3-btn w3-green w3-round">Add Me To The List</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-container w3-center">
+        <h2>Merry Christmas</h2>
+    </div>
+</div>
+<script src="scripts/snowstorm.js"></script>
 </body>
 </html>
